@@ -1,0 +1,11 @@
+@ShoppingCart_HostAddress = http://localhost:5170
+
+GET {{ShoppingCart_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{ShoppingCart_HostAddress}}/todos/1
+Accept: application/json
+
+###
