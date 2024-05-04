@@ -26,7 +26,7 @@ jobs:
         run: dotnet build ./Api/ShoppingCart/ShoppingCart.sln --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ./Api/ShoppingCart/ShoppingCart.sln
+        run: dotnet publish -c Release -o  ${{env.DOTNET_ROOT}}/Api/ShoppingCart/ShoppingCart.sln
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
